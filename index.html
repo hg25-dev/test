@@ -1,192 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hesty Gitarany - Odoo Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hesty Gitarany - Odoo Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code&display=swap" rel="stylesheet">
 
-body {
-    background: #F1F5F9;
-}
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-/* HERO */
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #0F172A, #020617);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-}
-
-.hero-text p {
-    margin: 20px 0;
-    font-size: 18px;
-}
-
-.btn {
-    padding: 10px 20px;
-    border: none;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: #14B8A6;
-    color: white;
-}
-
-.btn-secondary {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-}
-
-/* ABOUT */
-.about {
-    display: flex;
-    padding: 80px 10%;
-    gap: 40px;
-}
-
-.about img {
-    width: 200px;
-    border-radius: 50%;
-}
-
-/* SKILLS */
-.skills {
-    padding: 80px 10%;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.skill-card {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    border: 1px solid #14B8A6;
-}
-
-/* PORTFOLIO */
-.portfolio {
-    padding: 80px 10%;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.portfolio-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-    background: #020617;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.social-icons i {
-    margin: 0 10px;
-    cursor: pointer;
-}
-</style>
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">Hesty.dev</a>
+    </div>
+</nav>
+
 <!-- HERO -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Hi, I'm Hesty Gitarany</h1>
-        <p>Odoo Developer | ERP Specialist</p>
-        <button class="btn btn-primary">View Portfolio</button>
-        <button class="btn btn-secondary">Contact Me</button>
+<section class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- TEXT -->
+            <div class="col-md-6">
+                <h1>Hi, I'm <span class="accent">Hesty Gitarany</span></h1>
+                <p>Odoo Developer | ERP Specialist</p>
+
+                <button class="btn btn-accent">View Portfolio</button>
+                <button class="btn btn-outline-light">Contact Me</button>
+            </div>
+
+            <!-- TERMINAL STYLE -->
+            <div class="col-md-6">
+                <div class="terminal">
+<pre>
+> Hello World
+> I'm Hesty Gitarany
+> Odoo Developer
+> Building ERP Solutions...
+</pre>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about">
-    <img src="https://via.placeholder.com/200" alt="profile">
-    <div>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+<section class="about section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-4 text-center">
+                <img src="https://via.placeholder.com/200" class="profile-img">
+            </div>
+
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <!-- SKILLS -->
-<section class="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card">Odoo Functional</div>
-        <div class="skill-card">Odoo 15</div>
-        <div class="skill-card">Odoo 18</div>
-        <div class="skill-card">OOP</div>
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">Python</div>
-        <div class="skill-card">XML</div>
+<section class="skills section">
+    <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3"><div class="skill-card">Odoo Functional</div></div>
+            <div class="col-md-3"><div class="skill-card">Odoo 15</div></div>
+            <div class="col-md-3"><div class="skill-card">Odoo 18</div></div>
+            <div class="col-md-3"><div class="skill-card">OOP</div></div>
+            <div class="col-md-3"><div class="skill-card">HTML</div></div>
+            <div class="col-md-3"><div class="skill-card">CSS</div></div>
+            <div class="col-md-3"><div class="skill-card">Python</div></div>
+            <div class="col-md-3"><div class="skill-card">XML</div></div>
+
+        </div>
     </div>
 </section>
 
 <!-- PORTFOLIO -->
-<section class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <h3>VJ ERP - Retail</h3>
-            <p>Lorem ipsum dolor sit amet...</p>
-        </div>
-        <div class="portfolio-card">
-            <h3>Event Management LKPS</h3>
-            <p>Lorem ipsum dolor sit amet...</p>
+<section class="portfolio section">
+    <div class="container">
+        <h2 class="text-center mb-5">Portfolio</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="portfolio-card">
+                    <h4>VJ ERP - Retail</h4>
+                    <p>Lorem ipsum dolor sit amet, ERP system for retail business.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="portfolio-card">
+                    <h4>Event Management LKPS</h4>
+                    <p>Lorem ipsum dolor sit amet, system for managing events.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Hesty Gitarany</p>
-    <div class="social-icons">
-        <!-- icon fontawesome -->
-        <i class="fa-brands fa-square-linkedin"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i>GitHub</i>
-        <i class="fa-brands fa-square-whatsapp"></i>
-        <i>Email</i>
+    <div class="container text-center">
+        <p>© 2026 Hesty Gitarany</p>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
 </footer>
 
